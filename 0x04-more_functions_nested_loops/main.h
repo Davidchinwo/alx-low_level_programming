@@ -3,3 +3,5 @@
 
 int _putchar(char c);
 int _supper(int c);
+
+#endif /* MAIN_H */
