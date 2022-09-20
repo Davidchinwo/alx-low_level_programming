@@ -1,23 +1,43 @@
-#include "coding.h"
+#include "main.h"
 
 /**
- * puts2 - function with one argument
+ * cap_string - function with one argument
  * @str: char type pointer
  *
- * Description: print one char out of 2 of a string
- * Return: na
+ * Description: capitalizes all words of a string
+ * Return: pointer
  */
-void puts2(char *str)
-{
-	int i = 0;
 
-	while (*(str + i) != '\0')
+char *cap_string(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (i % 2 == 0)
+		if (str[0] >= 'a' && str[0] <= 'z')
+			str[i] = str[i] - 32;
+		switch (str[i])
 		{
-			_putchar(*(str + i));
+		case ' ':
+		case '\t':
+		case '\n':
+		case ',':
+		case ';':
+		case '.':
+		case '!':
+		case '?':
+		case '"':
+		case '(':
+		case ')':
+		case '{':
+		case '}':
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			{
+				str[i + 1] = str[i + 1] - 32;
+			}
 		}
 		i++;
 	}
-	_putchar('\n');
+	return (str);
 }
