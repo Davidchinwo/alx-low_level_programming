@@ -1,18 +1,11 @@
-#include "coding.h"
+iii#include "main.h"
 
 /**
- * swap_int - function with two int type pointer argument
- * @a: 1st argument int type
- * @b: 2nd argument int type
- *
- * Description: Using pointer to change value of a and b
- * Return: void
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
+ * @n: pointer to the variable to update
  */
-void swap_int(int *a, int *b)
+void reset_to_98(int *n)
 {
-	int tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	*n = 98;
 }
