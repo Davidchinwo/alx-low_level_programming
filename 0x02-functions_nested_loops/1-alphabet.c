@@ -1,4 +1,4 @@
-#include "coding.h"
+.#include main.h
 
 /**
  * print_alphabet - check the code for Coding School students.
