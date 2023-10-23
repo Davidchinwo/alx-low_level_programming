@@ -1,19 +1,18 @@
-.#include main.h
-
+#include "main.h"
 /**
- * print_alphabet - check the code for Coding School students.
+ * print_alphabet - function to print abc
  *
- * Description: Print lower case alphabet from a - z
- * using a for loop.
- * Return: Always 1.
+ * Return: Always 0
  */
 void print_alphabet(void)
 {
-	int i;
+	char c;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(i);
+		_putchar(c);
 	}
-	_putchar('\n');
+_putchar('\n');
+
+return (0);
 }
